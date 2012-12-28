@@ -1,0 +1,22 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Note:\
+I. why has class method:\
+1. Some time it's not necessary to allocate instance for calling a function.\
+2. Combine with Singleton pattern\
+3. object that return by class method is automatically added to autorelease \
+----------------\
+Fast enum\
+\pard\pardeftab720\sa240
+
+\f1\fs22 \cf0 NSArray *colors = [NSArray arrayWithObjects: @"Black", @"Silver", @"Gray", nil];
+\f2\fs24 \
+
+\f1\fs22 for (NSString *color in colors)\uc0\u8232 printf("Consider buying a %s car", [color UTF8String]);
+\f2\fs24 \
+}
