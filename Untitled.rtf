@@ -19,4 +19,23 @@ Fast enum\
 
 \f1\fs22 for (NSString *color in colors)\uc0\u8232 printf("Consider buying a %s car", [color UTF8String]);
 \f2\fs24 \
+---------------\
+NSLog print object\
+\pard\pardeftab720
+
+\f1\fs22 \cf0 NSLog(@\'94Make: %@", make); //%@\
+NSLog use description function of object to get the info of object\
+So above calling is the same with\
+fprintf(stderr, "%s\\n", [[make description] UTF8String]); \
+--------\
+String\
+\pard\pardeftab720\sa240
+
+\f2\fs26 \cf0 Cocoa touch offers an 
+\f1\fs22 NSStringFrom 
+\f2\fs26 family of functions.These provide a simple way to convert structures to printable strings suitable for logging
+\fs24 \
+Memory management\
+when add an object to auto release pool, system will auto release it when get out function(locally variable)
+\f1\fs22 \
 }
